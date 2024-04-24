@@ -1,0 +1,83 @@
+.control-panel-container {
+  margin-top: 4px;
+  flex-direction: column;
+  .searchview-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .searchview-item {
+      color: #707070;
+      line-height: 28px;
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+  }
+  .filter-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2px;
+  }
+
+  .filter-item-label {
+    width: 80px;
+    flex-shrink: 0;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-top: 6px;
+    white-space: nowrap;
+  }
+  .filter-item-input {
+    flex-grow: 1;
+    height: 28px;
+    margin-bottom: 2px;
+    // border: 1px #aaa solid;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+    outline: none;
+    width: 100%;
+  }
+  .filter-item-content {
+    flex-grow: 1;
+    min-height: 28px;
+    margin-bottom: 2px;
+  }
+
+  .el-date-editor .el-range-separator {
+    width: 30px;
+  }
+  .el-date-editor.el-input,
+  .el-date-editor.el-input__inner {
+    width: 100%;
+  }
+}
+
+.modal-dialog .control-panel-container {
+  overflow: visible;
+  margin-left: 20px;
+}
+// .cantrol-panel {
+//   padding: 3px;
+
+//   .el-table {
+//     td {
+//       padding: 0;
+//     }
+//     .cell {
+//       padding: 0;
+//       font-size: none;
+//       .el-checkbox {
+//         padding-top: 6px;
+//       }
+//     }
+//   }
+//   button {
+//     outline: none;
+//   }
+//   .input_content {
+//     margin-bottom: 10px;
+//     input {
+//       border-width: 0 0 1px 0;
+//     }
+//   }
+// }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="yj_control_panel_assets_backend" name="Control Panel Assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/yj_control_panel/static/src/js/cantrol_panel.js"></script>
+                <!-- <script type="text/javascript" src="/yj_control_panel/static/src/js/fs_group_select.js"></script>
+                <script type="text/javascript" src="/yj_control_panel/static/src/js/fs_select.js"></script>
+                <script type="text/javascript" src="/yj_control_panel/static/src/js/fs_date.js"></script>
+                <script type="text/javascript" src="/yj_control_panel/static/src/js/fs_select_base.js"></script>
+                <script type="text/javascript" src="/yj_control_panel/static/src/js/click_out_side.js"></script> -->
+                <link rel="stylesheet" type="text/scss" href="/yj_control_panel/static/src/scss/control_panel.scss"/>
+                <link rel="stylesheet" type="text/scss" href="/yj_control_panel/static/src/scss/fs_select.scss"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>

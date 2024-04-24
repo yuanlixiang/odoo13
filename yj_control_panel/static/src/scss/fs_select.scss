@@ -1,0 +1,208 @@
+
+.control-panel-container{
+    .yj-select {
+        position: relative;
+        // overflow: hidden;
+        max-width: calc(100% - 60px);
+        .yj-select-input-content {
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            border: 1px solid #ced4da;
+            border-radius: 3px;
+            padding: 0 4px;
+            .select-area {
+                display: flex;
+                flex-grow: 1;
+                height: 28px;
+                overflow: hidden;
+                .single-label {
+                    line-height: 28px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                .label-tag {
+                    max-width: calc(100% - 51px);
+                    position: relative;
+                    .tooltiptext {
+                        visibility: hidden;
+                        background-color: #eee;
+                        border-radius: 4px;
+                        border: 1px solid #aaa;
+                        color: #aaa;
+                        text-align: center;
+                        padding: 2px 5px;
+                        position: fixed;
+                        z-index: 100;
+                    }
+    
+                    &:hover {
+                        .tooltiptext {
+                            visibility: visible;
+                        }
+                    }
+                }
+                .tag {
+                    background: #f4f4f5;
+                    border: 1px solid #e9e9eb;
+                    border-radius: 4px;
+                    color: #707070;
+                    padding: 0 4px;
+                    margin: 2px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .tag-span {
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+                    .tag-close {
+                        cursor: pointer;
+                        margin-left: 4px;
+                    }
+                }
+                .search-input {
+                    border: none;
+                    outline: none;
+                    width: 18px;
+                    flex-grow: 1;
+                }
+            }
+    
+            .fs-arrow {
+                transition: all 0.3s;
+            }
+            .right-icon {
+                padding: 4px;
+                cursor: pointer;
+                color: #ced4da;
+                // color: #707070;
+            }
+            .up {
+                transform: rotate(180deg);
+            }
+            .fs-del {
+                visibility: hidden;
+            }
+    
+            &:hover {
+                .fs-del {
+                    visibility: visible;
+                }
+            }
+        }
+        .options-content {
+            max-height: 0;
+            opacity: 0;
+            z-index: 100;
+            border: 1px solid #ced4da;
+            background-color: #FFF;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            position: absolute;
+            overflow-y: auto;
+            min-width: 70px;
+            transition: all 0.3s;
+            top: 27px;
+            left: 0px;
+            font-size: 12px;
+            
+            .options {
+                padding: 4px 0;
+                margin: 0;
+                .option {
+                    color: #707070;
+                    padding: 1px 4px;
+                    list-style-type: none;
+                    line-height: 1.4rem;
+                    cursor: pointer;
+                    user-select: none;
+        
+                    &:hover {
+                        background-color: #ccc;
+                    }
+                }
+                .option-check {
+                    line-height: 1.3rem;
+                }
+                .info-option {
+                    color: #707070;
+                    padding: 1px 4px;
+                    list-style-type: none;
+                    line-height: 1.4rem;
+                    user-select: none;
+                }
+            }
+        }
+        .options-content.unfold {
+            max-height: 360px;
+            opacity: 1;
+        }
+    }
+    
+    .yj-group-select {
+        outline: none;
+        position: relative;
+        .options-content {
+            width: calc(100% - 1rem);
+            top: 24px;
+            max-height: 0;
+            opacity: 0;
+            // border: 1px #aaa solid;
+            border: 1px solid #ced4da;
+            background-color: #FFF;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            position: absolute;
+            overflow-y: auto;
+            min-width: 70px;
+            transition: all 0.3s;
+            z-index: 100;
+            .options {
+                padding: 1px 4px;
+                padding: 4px 0;
+                margin: 0;
+                .option {
+                    color: #707070;
+                    padding: 1px 4px;
+                    list-style-type: none;
+                    line-height: 1.4rem;
+                    cursor: pointer;
+                    user-select: none;
+        
+                    &:hover {
+                        background-color: #ccc;
+                    }
+                }
+                .option-check {
+                    line-height: 1.3rem;
+                }
+            }
+        } 
+        &:focus {
+            .options-content {
+                max-height: 360px;
+                opacity: 1;
+            }
+            .arrow {
+                transform: rotate(180deg);
+            }
+        }
+        .arrow {
+            transition: all 0.5s;
+        }
+    }
+
+    .selected {
+        color: #4E4E4E !important;
+        font-weight: bold;
+    }
+    .btn {
+        // line-height: 28px;
+        // height: 28px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}

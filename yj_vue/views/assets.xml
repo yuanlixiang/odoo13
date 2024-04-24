@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="yj_vue_assets_backend" name="Vue Assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <!-- <link rel="stylesheet" href="/yj_vue/static/src/css/element-ui.css"/> -->
+                <!-- <script type="text/javascript" src="/yj_vue/static/src/js/vue.js"></script> -->
+                <!-- <script type="text/javascript" src="/yj_vue/static/src/js/element-ui.js"></script>
+                <script type="text/javascript" src="/yj_vue/static/src/js/print.js"></script>
+                <script type="text/javascript" src="/yj_vue/static/src/js/xlsx.full.min.js"></script> -->
+            </xpath>
+        </template>
+    </data>
+</odoo>

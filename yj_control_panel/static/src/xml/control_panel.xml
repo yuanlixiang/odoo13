@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+
+    <t t-name="control_panel.template" t-extend="ControlPanel">
+        <t t-jquery=".o_control_panel" t-operation="append">
+            <div id="controlPanel"></div>
+        </t>
+       <!-- <t t-jquery="div.o_cp_searchview" t-operation="replace"></t>
+       <t t-jquery="div.o_search_options" t-operation="replace"></t> -->
+
+        <t t-jquery="div.o_cp_searchview" t-operation="attributes">
+           <attribute name="style" value="display:none" />
+        </t>
+
+        <!-- <t t-jquery="div.o_search_options" t-operation="attributes">
+           <attribute name="style" value="display:none" />
+        </t> -->
+        
+    </t>
+
+</templates>
+
